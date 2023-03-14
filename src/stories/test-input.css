@@ -6,12 +6,12 @@
 }
 
 input {
-  min-width: 500px;
+  min-width: 300px;
   padding: 6px 12px;
-  border: 1px solid #aaa;
-  border-radius: 5px;
+  border: 1px solid #868585;
+  border-radius: 3px;
   outline: 0;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 28px;
   color: #222;
   transition: all 0.3s;
