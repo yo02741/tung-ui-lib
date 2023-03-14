@@ -6,7 +6,15 @@ module.exports = {
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/addon-interactions"
+    "@storybook/addon-interactions",
+    {
+      name: '@storybook/addon-styling',
+      options: {
+        sass: {
+          implementation: require('sass'),
+        },
+      },
+    },
   ],
   "framework": "@storybook/vue3",
   "core": {
