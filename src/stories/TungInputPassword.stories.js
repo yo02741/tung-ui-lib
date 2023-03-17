@@ -1,7 +1,7 @@
-import TungInputPassword from './TungInputPassword.vue'
+import TungInputPassword from '../components/Input/TungInputPassword.vue'
 
 export default {
-  title: 'Tung/InputPassword',
+  title: 'Tung/TungInputPassword',
   component: TungInputPassword,
 }
 

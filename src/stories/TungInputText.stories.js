@@ -1,7 +1,7 @@
-import TungInputText from './TungInputText.vue'
+import TungInputText from '../components/Input/TungInputText.vue'
 
 export default {
-  title: 'Tung/InputText',
+  title: 'Tung/TungInputText',
   component: TungInputText,
 }
 
