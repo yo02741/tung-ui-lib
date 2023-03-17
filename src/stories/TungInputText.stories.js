@@ -1,16 +1,16 @@
-import TestInputPassword from './TestInputPassword.vue'
+import TungInputText from './TungInputText.vue'
 
 export default {
-  title: 'TEST/InputPassword',
-  component: TestInputPassword,
+  title: 'Tung/InputText',
+  component: TungInputText,
 }
 
 const Template = (args) => ({
-  components: { TestInputPassword },
+  components: { TungInputText },
   setup() {
     return { args };
   },
-  template: '<TestInputPassword v-bind="args" />',
+  template: '<TungInputText v-bind="args" />',
 })
 
 export const Default = Template.bind({})

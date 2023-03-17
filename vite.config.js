@@ -1,5 +1,6 @@
 import { fileURLToPath, URL } from 'node:url'
 
+import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
@@ -14,5 +15,32 @@ export default defineConfig({
   server: {
     host:'0.0.0.0',
     port: 5678,
-  }
+  },
+  build: {
+    lib: {
+      entry: resolve(__dirname, 'src/entry.js'),
+      name: 'TungUILibrary',
+      fileName: 'tung-ui-library',
+    },
+    rollupOptions: {
+      external: ['vue'],
+      output: {
+        globals: {
+          vue: 'Vue',
+        },
+      },
+    },
+    css: {
+      include: [
+        'src/assets/all.scss',
+      ],
+      preprocessorOptions: {
+        scss: {
+          additionalData: `
+            @import "src/assets/all.scss";
+          `
+        }
+      }
+    }
+  },
 })

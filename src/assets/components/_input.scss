@@ -1,0 +1,32 @@
+.tung-input {
+  --main--color: #019A5B;
+  --main--box-shadow: #25ac7491;
+  min-width: 300px;
+  padding: 6px 12px;
+  border: 1px solid #868585;
+  border-radius: 3px;
+  outline: 0;
+  font-size: 16px;
+  line-height: 28px;
+  color: #222;
+  transition: all 0.3s;
+  &[disabled] {
+    background: #eee;
+    cursor: not-allowed;
+  }
+  &:not([disabled]):hover,
+  &:not([disabled]):focus {
+    border-color: var(--main--color);
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.25rem var(--main--box-shadow);
+  }
+  &.error,
+  &.error:hover,
+  &.error:focus {
+    border-color: #dc3545;
+  }
+  &.error:focus {
+    box-shadow: 0 0 0 0.25rem #dc354530;
+  }
+}

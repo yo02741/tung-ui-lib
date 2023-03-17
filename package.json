@@ -1,6 +1,18 @@
 {
-  "name": "storybook",
-  "version": "0.0.0",
+  "name": "tung-ui-library",
+  "version": "0.0.1",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/tung-ui-library.umd.js",
+  "module": "./dist/tung-ui-library.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/tung-ui-library.mjs",
+      "require": "./dist/tung-ui-library.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
