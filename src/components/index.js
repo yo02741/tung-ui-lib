@@ -1,11 +1,11 @@
-import TungButton from './Button/TungButton.vue'
+import YoButton from './Button/YoButton.vue'
 
-import TungInputText from './Input/TungInputText.vue'
-import TungInputPassword from './Input/TungInputPassword.vue'
+import YoInputText from './Input/YoInputText.vue'
+import YoInputPassword from './Input/YoInputPassword.vue'
 
 export default {
-  TungButton,
+  YoButton,
 
-  TungInputText,
-  TungInputPassword
+  YoInputText,
+  YoInputPassword
 };

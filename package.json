@@ -1,15 +1,15 @@
 {
-  "name": "tung-ui-library",
+  "name": "yo-ui-library",
   "version": "0.0.1",
   "files": [
     "dist"
   ],
-  "main": "./dist/tung-ui-library.umd.js",
-  "module": "./dist/tung-ui-library.mjs",
+  "main": "./dist/yo-ui-library.umd.js",
+  "module": "./dist/yo-ui-library.mjs",
   "exports": {
     ".": {
-      "import": "./dist/tung-ui-library.mjs",
-      "require": "./dist/tung-ui-library.umd.js"
+      "import": "./dist/yo-ui-library.mjs",
+      "require": "./dist/yo-ui-library.umd.js"
     },
     "./dist/style.css": "./dist/style.css"
   },

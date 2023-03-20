@@ -19,8 +19,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src/entry.js'),
-      name: 'TungUILibrary',
-      fileName: 'tung-ui-library',
+      name: 'YoUILibrary',
+      fileName: 'yo-ui-library',
     },
     rollupOptions: {
       external: ['vue'],

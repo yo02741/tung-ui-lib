@@ -1,15 +1,16 @@
 <template>
   <input
-    type="password"
-    class="tung-input"
+    type="text"
+    class="yo-input"
     :placeholder="placeholder"
     :disabled="disabled"
+    autocomplete="off"
   />
 </template>
 
 <script>
 export default {
-  name: 'TungInputPassword',
+  name: 'YoInputText',
 
   props: {
     placeholder: {
