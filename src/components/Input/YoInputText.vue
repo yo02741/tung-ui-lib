@@ -5,6 +5,8 @@
     :placeholder="placeholder"
     :disabled="disabled"
     autocomplete="off"
+    :value="modelValue"
+    @input="$emit('update:modelValue', $event.target.value)"
   />
 </template>
 
@@ -21,6 +23,12 @@ export default {
       type: Boolean,
       default: false,
     },
-  }
+    modelValue: {
+      type: String,
+      default: '',
+    },
+  },
+
+  emits: ['update:modelValue']
 }
 </script>
