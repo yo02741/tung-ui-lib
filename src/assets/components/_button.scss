@@ -1,23 +1,56 @@
 .yo-button {
-  --main--color: #019A5B;
-  --main--box-shadow: #25ac7491;
+  --main--color: #009A5B;
+  --main--box-shadow: #009A5B4D;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   column-gap: 10px;
-  min-width: 150px;
-  padding: 9px 0;
   background: var(--main--color);
   z-index: 1;
-  border: 0;
+  border: 1px solid var(--main--color);
   border-radius: 5px;
   font-size: 16px;
   line-height: 24px;
   color: #fff;
   cursor: pointer;
   transition: all 0.3s;
-  &:focus {
+  &.normal {
+    height: 36px;
+    padding: 6px 15px;
+  }
+  &.large {
+    width: 140px;
+    height: 48px;
+    padding: 9px 15px;
+  }
+  /* Default: hover, focus*/
+  &:not([disabled]):hover,
+  &:not([disabled]):focus {
+    background: #008850;
+  }
+  &:not([disabled]):focus {
     box-shadow: 0 0 0 0.25rem var(--main--box-shadow);
+  }
+  /* Outline: hover, focus */
+  &.outline {
+    background: #fff;
+    color: var(--main--color);
+    border: 1px solid var(--main--color);
+    &:not([disabled]):hover,
+    &:not([disabled]):focus {
+      background: #E5F4EE;
+    }
+    &:not([disabled]):focus {
+      box-shadow: 0 0 0 0.25rem var(--main--box-shadow);
+    }
+  }
+  /* Disabled */
+  &[disabled],
+  &.outline[disabled] {
+    background: #E4E4E4;
+    border-color: #E4E4E4;
+    color: #B7B7B7;
+    cursor: not-allowed;
   }
 }
