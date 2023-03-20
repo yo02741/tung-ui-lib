@@ -1,26 +1,31 @@
-import YoInputPassword from '../components/Input/YoInputPassword.vue'
+import YoInput from '../components/Input/YoInput.vue'
 
 export default {
-  title: 'Yo/InputPassword',
-  component: YoInputPassword,
+  title: 'Inputs/InputText',
+  component: YoInput,
 }
 
 const Template = (args) => ({
-  components: { YoInputPassword },
+  components: { YoInput },
   setup() {
     return { args };
   },
-  template: '<YoInputPassword v-bind="args" />',
+  template: '<YoInput v-bind="args" />',
 })
 
 export const Default = Template.bind({})
+Default.args = {
+  type: 'text',
+}
 
 export const Disabled = Template.bind({})
 Disabled.args = {
+  type: 'text',
   disabled: true
 }
 
 export const Error = Template.bind({})
 Error.args = {
+  type: 'text',
   error: true
 }
