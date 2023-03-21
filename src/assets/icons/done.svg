@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+  <g id="complete-icon" transform="translate(-517.634)">
+    <circle id="Ellipse_9393" data-name="Ellipse 9393" cx="7.5" cy="7.5" r="7.5" transform="translate(517.634)" fill="#3bbe18"/>
+    <path id="check" d="M10.133,4.943a.659.659,0,1,1,.941.922L7.567,10.249a.659.659,0,0,1-.949.018L4.295,7.942a.659.659,0,1,1,.931-.931L7.066,8.849l3.051-3.887.018-.019Z" transform="translate(517.675 0.156)" fill="#fff" fill-rule="evenodd"/>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+<svg id="eye-off_icon" data-name="eye-off icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+  <rect id="Area" width="26" height="26" fill="rgba(255,255,255,0.35)" opacity="0"/>
+  <g id="Icon_feather-eye-off" data-name="Icon feather-eye-off" transform="translate(3.027 3.027)">
+    <path id="Path_770" data-name="Path 770" d="M16.86,18.64a9.131,9.131,0,0,1-5.386,1.868c-6.347,0-9.974-7.254-9.974-7.254A16.729,16.729,0,0,1,6.088,7.868M9.57,6.218A8.269,8.269,0,0,1,11.474,6c6.347,0,9.974,7.254,9.974,7.254a16.775,16.775,0,0,1-1.959,2.892m-6.093-.97a2.72,2.72,0,1,1-3.845-3.845" transform="translate(-1.5 -3.28)" fill="none" stroke="#818a91" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.67"/>
+    <path id="Path_771" data-name="Path 771" d="M1.5,1.5,21.448,21.448" transform="translate(-1.5 -1.5)" fill="none" stroke="#818a91" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.67"/>
+  </g>
+</svg>

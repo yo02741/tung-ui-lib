@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14">
+  <g id="arrow-rignt_icon_" data-name="arrow-rignt icon " transform="translate(-4 -2.659)">
+    <rect id="Area" width="18" height="14" transform="translate(4 2.659)" fill="#fcfcfc" opacity="0"/>
+    <g id="arrow-right" transform="translate(6.732 5.068)">
+      <path id="Path_760" data-name="Path 760" d="M7.5,18H19.306" transform="translate(-7.5 -13.473)" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_761" data-name="Path 761" d="M18,7.5l4.527,4.527L18,16.554" transform="translate(-9.888 -7.5)" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

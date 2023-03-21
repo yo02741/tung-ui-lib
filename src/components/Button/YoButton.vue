@@ -26,6 +26,16 @@ defineProps({
     ]"
     :disabled="disabled"
   >
+    <!-- <img src="../../assets/icons/done.svg" alt="" class="start-icon"> -->
     <slot></slot>
+    <!-- <img src="../../assets/icons/done.svg" alt="" class="end-icon"> -->
   </button>
 </template>
+
+<style lang="scss" scoped>
+.yo-button .start-icon,
+.yo-button .end-icon {
+  width: 16px;
+  height: 16px;
+}
+</style>
