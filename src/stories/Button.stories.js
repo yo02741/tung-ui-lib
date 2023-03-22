@@ -18,18 +18,56 @@ Default.args = {
   slotText: 'Default',
 }
 
-export const DefaultDisabled = Template.bind({})
-DefaultDisabled.args = {
+Default.parameters = {
+  docs: {
+    source: {
+      code: '<YoButton>Default</YoButton>',
+      language: "html",
+    },
+  },
+};
+
+export const Disabled = Template.bind({})
+Disabled.args = {
   slotText: 'Disabled',
   disabled: true
 }
 
-export const DefaultNormalSize = Template.bind({})
-DefaultNormalSize.args = {
+Disabled.parameters = {
+  docs: {
+    source: {
+      code: '<YoButton disabled>Disabled</YoButton>',
+      language: "html",
+    },
+  },
+};
+
+export const NormalSize = Template.bind({})
+NormalSize.args = {
+  slotText: 'NormalSize',
   size: 'normal'
 }
 
-export const DefaultLargeSize = Template.bind({})
-DefaultLargeSize.args = {
+NormalSize.parameters = {
+  docs: {
+    source: {
+      code: '<YoButton size="normal">NormalSize</YoButton>',
+      language: "html",
+    },
+  },
+};
+
+export const LargeSize = Template.bind({})
+LargeSize.args = {
+  slotText: 'LargeSize',
   size: 'large'
 }
+
+LargeSize.parameters = {
+  docs: {
+    source: {
+      code: '<YoButton size="large">LargeSize</YoButton>',
+      language: "html",
+    },
+  },
+};

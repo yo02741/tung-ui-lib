@@ -14,3 +14,11 @@ const Template = (args) => ({
 })
 
 export const Default = Template.bind({})
+Default.parameters = {
+  docs: {
+    source: {
+      code: '<YoLoginButton />',
+      language: "html",
+    },
+  },
+};

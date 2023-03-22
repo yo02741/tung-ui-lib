@@ -19,22 +19,59 @@ Outline.args = {
   outline: true
 }
 
-export const OutlineDisabled = Template.bind({})
-OutlineDisabled.args = {
-  slotText: 'OutlineDisabled',
+Outline.parameters = {
+  docs: {
+    source: {
+      code: '<YoButton outline>Default</YoButton>',
+      language: "html",
+    },
+  },
+};
+
+export const Disabled = Template.bind({})
+Disabled.args = {
+  slotText: 'Disabled',
   disabled: true,
   outline: true
 }
 
-export const OutlineNormalSize = Template.bind({})
-OutlineNormalSize.args = {
+Disabled.parameters = {
+  docs: {
+    source: {
+      code: '<YoButton disabled outline>Default</YoButton>',
+      language: "html",
+    },
+  },
+};
+
+export const NormalSize = Template.bind({})
+NormalSize.args = {
+  slotText: 'NormalSize',
   outline: true,
   size: 'normal'
 }
 
-export const OutlineLargeSize = Template.bind({})
-OutlineLargeSize.args = {
+NormalSize.parameters = {
+  docs: {
+    source: {
+      code: '<YoButton outline size="normal">NormalSize</YoButton>',
+      language: "html",
+    },
+  },
+};
+
+export const LargeSize = Template.bind({})
+LargeSize.args = {
+  slotText: 'LargeSize',
   outline: true,
   size: 'large'
 }
 
+LargeSize.parameters = {
+  docs: {
+    source: {
+      code: '<YoButton outline size="large">LargeSize</YoButton>',
+      language: "html",
+    },
+  },
+};
