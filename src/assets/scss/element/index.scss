@@ -3,7 +3,15 @@
     'primary': (
       'base': #019a5b,
     ),
-  )
+  ),
+  $border-color: (
+    '' : #cccccc,
+  ),
+  $text-color: (
+    'regular' : #222222,
+    'placeholder': #858796,
+  ),
+
 );
 
 @use "element-plus/theme-chalk/src/index.scss" as *;

@@ -21,7 +21,60 @@ const Template = (args) => ({
 })
 
 export const Default = Template.bind({})
-
 Default.args = {
   modelValue: ''
 }
+
+Default.parameters = {
+  docs: {
+    source: {
+      code: '<YoDatePicker v-model="" />',
+      language: "html",
+    },
+  },
+};
+
+export const Disabled = Template.bind({})
+Disabled.args = {
+  modelValue: '',
+  disabled: true
+}
+
+Disabled.parameters = {
+  docs: {
+    source: {
+      code: '<YoDatePicker v-model="" disabled />',
+      language: "html",
+    },
+  },
+};
+
+export const IconAtTheStart = Template.bind({})
+IconAtTheStart.args = {
+  iconPosition: 'start',
+  modelValue: ''
+}
+
+IconAtTheStart.parameters = {
+  docs: {
+    source: {
+      code: '<YoDatePicker v-model="" />',
+      language: "html",
+    },
+  },
+};
+
+export const IconAtTheEnd = Template.bind({})
+IconAtTheEnd.args = {
+  iconPosition: 'end',
+  modelValue: ''
+}
+
+IconAtTheEnd.parameters = {
+  docs: {
+    source: {
+      code: '<YoDatePicker v-model="" icon-position="end" />',
+      language: "html",
+    },
+  },
+};
