@@ -1,6 +1,6 @@
 .yo-input {
   --main--color: #009A5B;
-  --main--box-shadow: #009A5B4D;
+  --main--box-shadow: #b3e1ce;
   width: 300px;
   padding: 6px 12px;
   border: 1px solid #CCCCCC;
@@ -10,6 +10,9 @@
   line-height: 28px;
   color: #222;
   transition: all 0.3s;
+  ::placeholder {
+    color: #858796;
+  }
   &[disabled] {
     background: #eee;
     cursor: not-allowed;
