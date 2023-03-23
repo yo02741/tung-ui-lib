@@ -1,6 +1,7 @@
 import * as components from './components'
 
-import './assets/all.scss'
+import './assets/scss/element/index.scss'
+import './assets/scss/all.scss'
 
 const componentsList = components?.default;
 const YoUILibrary = {

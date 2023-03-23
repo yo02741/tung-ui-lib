@@ -31,17 +31,5 @@ export default defineConfig({
         },
       },
     },
-    css: {
-      include: [
-        'src/assets/all.scss',
-      ],
-      preprocessorOptions: {
-        scss: {
-          additionalData: `
-            @import "src/assets/all.scss";
-          `
-        }
-      }
-    }
   },
 })
