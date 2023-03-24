@@ -6,7 +6,7 @@ import { computed, h, ref, shallowRef } from 'vue';
 const props = defineProps({
   placeholder: {
     type: String,
-    default: "請輸入 ...",
+    default: "請選擇 ...",
   },
   disabled: {
     type: Boolean,
@@ -58,7 +58,9 @@ const customPrefix = shallowRef({
       :prefix-icon="customPrefix"
       :disabled="disabled"
       :clearable="false"
+      class="yo-date-picker"
       :class="[`icon-position-${iconPosition}`]"
+      popper-class="yo-date-picker"
     />
   </el-config-provider>
 </template>

@@ -8,10 +8,18 @@
     '' : #cccccc,
   ),
   $text-color: (
+    'primary': #222222,
     'regular' : #222222,
     'placeholder': #858796,
   ),
-
+  $font-size: (
+    'extra-large': 22px,
+    'large': 20px,
+    'medium': 19px,
+    'base': 16px,
+    'small': 14px,
+    'extra-small': 12px,
+  )
 );
 
 @use "element-plus/theme-chalk/src/index.scss" as *;
