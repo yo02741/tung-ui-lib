@@ -23,3 +23,52 @@
     }
   }
 }
+
+.el-picker-panel__icon-btn {
+  margin: 0;
+}
+
+.el-picker__popper {
+  .d-arrow-left,
+  .arrow-left,
+  .d-arrow-right,
+  .arrow-right {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #dddddd;
+    .el-icon {
+      color: #ffffff;
+      font-weight: bold;
+    }
+  }
+  .d-arrow-left,
+  .d-arrow-right {
+    margin: 0 5px;
+  }
+}
+
+.el-date-picker {
+  &__header {
+    line-height: 30px;
+    column-gap: 5px;
+  }
+  &__prev-btn,
+  &__next-btn {
+    display: flex;
+    align-items: center;
+    height: 30px;
+  }
+  &__header-label {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #222222;
+    user-select: none;
+    &.active,
+    &:hover {
+      color: #222222;
+    }
+  }
+}
