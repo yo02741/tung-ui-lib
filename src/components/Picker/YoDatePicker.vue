@@ -57,6 +57,7 @@ const customPrefix = shallowRef({
       :placeholder="placeholder"
       :prefix-icon="customPrefix"
       :disabled="disabled"
+      :teleported="false"
       :clearable="false"
       class="yo-date-picker"
       :class="[`icon-position-${iconPosition}`]"

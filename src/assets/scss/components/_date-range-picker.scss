@@ -122,7 +122,7 @@
 }
 
 // 有 title 的情况
-.el-picker__popper.yo-date-range-picker-popper.has-title  {
+.el-date-editor.yo-date-range-picker.has-title + .el-picker__popper.yo-date-range-picker-popper {
   padding-top: 55px;
   &::after {
     content: "請選擇日期區間";

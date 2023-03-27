@@ -86,13 +86,14 @@ const customPrefix = shallowRef({
       :end-placeholder="endPlaceholder"
       :prefix-icon="customPrefix"
       :disabled="disabled"
+      :teleported="false"
       :clearable="false"
       :shortcuts="getShortcuts"
       format="YYYY-MM-DD"
       value-format="YYYYMMDD"
       class="yo-date-range-picker"
-      :class="[`icon-position-${iconPosition}`]"
-      :popper-class="['yo-date-range-picker-popper', { 'has-title': hasTitle }]"
+      :class="[`icon-position-${iconPosition}`, { 'has-title': hasTitle }]"
+      popper-class="yo-date-range-picker-popper"
     />
   </el-config-provider>
 </template>
