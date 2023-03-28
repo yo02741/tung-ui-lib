@@ -36,7 +36,7 @@ const vv = computed({
 const customPrefix = shallowRef({
   render() {
     return h('img', { 
-      src: new URL('/src/assets/icons/calendar.svg', import.meta.url),
+      src: new URL('/src/assets/icons/clock.svg', import.meta.url),
       style: {
         width: '18px',
         height: '18px',
