@@ -61,7 +61,7 @@ const customPrefix = shallowRef({
       :clearable="false"
       class="yo-date-picker"
       :class="[`icon-position-${iconPosition}`]"
-      popper-class="yo-date-picker"
+      popper-class="yo-date-picker-popper"
     />
   </el-config-provider>
 </template>
