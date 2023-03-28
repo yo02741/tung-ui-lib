@@ -51,6 +51,8 @@ const customPrefix = shallowRef({
   <el-config-provider :locale="zhTw">
     <el-time-picker
       v-model="vv"
+      format="HH:mm:ss"
+      value-format="HH:mm:ss"
       :placeholder="placeholder"
       :prefix-icon="customPrefix"
       :disabled="disabled"
