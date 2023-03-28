@@ -8,15 +8,14 @@
     cursor: not-allowed;
     .checkmark {
       background-color: #E4E4E4;
-      border-color: #E4E4E4;
+      border-color: #B7B7B7;
     }
-  }
-
-  &.is-disabled .yo-checkbox-input:checked + .checkmark {
-    background-color: #E4E4E4;
-    border-color: #E4E4E4;
-    &::after {
-      content:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='%23bbb' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>")
+    .yo-checkbox-input:checked + .checkmark {
+      background-color: #E4E4E4;
+      border-color: #B7B7B7;
+      &::after {
+        content:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='%23bbb' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>")
+      }
     }
   }
 
@@ -30,7 +29,7 @@
     background-color: #ffffff;
     border: 1px solid #BDBDBD;
     border-radius: 3px;
-    transition: border-color 0.3s;
+    transition: all 0.3s;
   }
   &:not(.is-disabled):hover {
     .checkmark {

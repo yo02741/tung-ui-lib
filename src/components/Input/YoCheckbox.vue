@@ -12,7 +12,7 @@ const props = defineProps({
   },
   modelValue: {
     type: Array,
-    default: () => [],
+    required: true,
   },
 });
 
