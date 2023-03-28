@@ -1,0 +1,66 @@
+.yo-radio-item{
+  position: relative;
+  display: block;
+  padding: 6px 0 6px 24px;
+  margin: 0;
+  cursor: pointer;
+  &.is-disabled {
+    cursor: not-allowed;
+    .radiomark {
+      background-color: #E4E4E4;
+      border-color: #B7B7B7;
+    }
+    .yo-radio-input:checked + .radiomark {
+      background-color: #E4E4E4;
+      border-color: #B7B7B7;
+      &::after {
+        background-color: #B7B7B7;
+      }
+    }
+  }
+
+  .radiomark {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    background-color: #ffffff;
+    border: 1px solid #BDBDBD;
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+  &:not(.is-disabled):hover {
+    .radiomark {
+      border-color: #009a5b;
+    }
+  }
+}
+
+.yo-radio-input {
+  display: none;  
+  &:checked + .radiomark {
+    background: #009a5b;
+    border-color: #009a5b;
+  }
+  &:checked + .radiomark::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+}
+
+.yo-radio-label {
+  width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+  user-select: none;
+  white-space: nowrap;
+}
