@@ -5,6 +5,7 @@ import YoInput from './Input/YoInput.vue'
 import YoRadio from './Input/YoRadio.vue'
 import YoDatePicker from './Picker/YoDatePicker.vue'
 import YoDateRangePicker from './Picker/YoDateRangePicker.vue'
+import YoTimePicker from './Picker/YoTimePicker.vue'
 import YoSelect from './Select/YoSelect.vue'
 
 export default {
@@ -15,5 +16,6 @@ export default {
   YoRadio,
   YoDatePicker,
   YoDateRangePicker,
+  YoTimePicker,
   YoSelect
 };

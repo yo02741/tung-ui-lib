@@ -1,0 +1,77 @@
+.el-date-editor.yo-time-picker {
+  --el-border-color-hover: var(--el-color-primary);
+  border-radius: 4px;
+  transition: all .3s;
+  &.el-input {
+    width: 140px;
+    height: 36px;
+  }
+
+  &.el-input.is-disabled .el-input__wrapper {
+    box-shadow: 0 0 0 1px var(--el-input-border-color, var(--el-border-color)) inset;
+  }
+
+  &[aria-expanded=true] {
+    box-shadow: 0 0 0 0.25rem var(--el-color-primary-light-7);
+  }
+
+  &.icon-position-end .el-input__prefix {
+    order: 99;
+    .el-icon.el-input__icon {
+      margin-right: 0;
+      margin-left: 8px;
+    }
+  }
+}
+
+
+
+.el-picker__popper.yo-time-picker-popper {
+  .el-picker-panel__icon-btn {
+    margin: 0;
+  }
+  .d-arrow-left,
+  .arrow-left,
+  .d-arrow-right,
+  .arrow-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #dddddd;
+    .el-icon {
+      color: #ffffff;
+      font-weight: bold;
+    }
+  }
+  .d-arrow-left,
+  .d-arrow-right {
+    margin: 0 5px;
+  }
+  .el-date-picker {
+    &__header {
+      line-height: 30px;
+      column-gap: 5px;
+    }
+    &__prev-btn,
+    &__next-btn {
+      display: flex;
+      align-items: center;
+      height: 30px;
+    }
+    &__header-label {
+      display: inline-block;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 30px;
+      color: #222222;
+      user-select: none;
+      &.active,
+      &:hover {
+        color: #222222;
+      }
+    }
+  }
+}
