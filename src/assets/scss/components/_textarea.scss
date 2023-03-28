@@ -1,0 +1,54 @@
+.yo-textarea {
+  --main--color: #009A5B;
+  --main--box-shadow: #b3e1ce;
+  width: 300px;
+  padding: 6px 12px;
+  border: 1px solid #CCCCCC;
+  border-radius: 3px;
+  outline: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #222;
+  resize: none;
+  transition: all 0.3s;
+  ::placeholder {
+    color: #858796;
+  }
+  /* width */
+  &::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+  }
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border-radius: 9999px;
+    background-color: #dddddd;
+    &:hover {
+      background-color: #cccaca;
+    }
+  }
+  &::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+  &[disabled] {
+    background: #eee;
+    cursor: not-allowed;
+  }
+  &:not([disabled]):hover,
+  &:not([disabled]):focus {
+    border-color: var(--main--color);
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.25rem var(--main--box-shadow);
+  }
+  &.error,
+  &.error:hover,
+  &.error:focus {
+    border-color: #dc3545;
+  }
+  &.error:focus {
+    box-shadow: 0 0 0 0.25rem #dc354530;
+  }
+}
