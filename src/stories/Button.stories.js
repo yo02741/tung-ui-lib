@@ -10,7 +10,16 @@ const Template = (args) => ({
   setup() {
     return { args };
   },
-  template: `<YoButton v-bind="args">{{ args.slotText || 'Button' }}</YoButton>`,
+  template: `
+    <YoButton v-bind="args">
+      <template #start-icon>
+        <img v-if="args.slotStartIcon" :src="args.slotStartIcon" alt="" />
+      </template>
+      <template #default>{{ args.slotText || 'Button' }}</template>
+      <template #end-icon>
+        <img v-if="args.slotEndIcon" :src="args.slotEndIcon" alt="" />
+      </template>
+    </YoButton>`,
 })
 
 export const Default = Template.bind({})
@@ -71,3 +80,14 @@ LargeSize.parameters = {
     },
   },
 };
+
+
+export const withStartIcon = Template.bind({})
+withStartIcon.args = {
+  slotStartIcon: new URL('../assets/icons/user.svg', import.meta.url),
+}
+
+export const withEndIcon = Template.bind({})
+withEndIcon.args = {
+  slotEndIcon: new URL('../assets/icons/user.svg', import.meta.url),
+}

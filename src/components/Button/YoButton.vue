@@ -10,7 +10,7 @@ defineProps({
   },
   size: {
     type: String,
-    default: 'normal', /* normal large */
+    default: "normal" /* normal large */,
   },
 });
 </script>
@@ -18,24 +18,30 @@ defineProps({
 <template>
   <button
     class="yo-button"
-    :class="[
-      {
-        'outline': outline
-      },
-      size
-    ]"
+    :class="[{ outline: outline }, size]"
     :disabled="disabled"
   >
-    <!-- <img src="../../assets/icons/done.svg" alt="" class="start-icon"> -->
-    <slot></slot>
-    <!-- <img src="../../assets/icons/done.svg" alt="" class="end-icon"> -->
+    <div class="start-icon-div">
+      <slot name="start-icon" />
+    </div>
+    <slot />
+    <div class="end-icon-div">
+      <slot name="end-icon" />
+    </div>
   </button>
 </template>
 
-<style lang="scss" scoped>
-.yo-button .start-icon,
-.yo-button .end-icon {
-  width: 16px;
-  height: 16px;
+<style lang="scss">
+.yo-button .start-icon-div,
+.yo-button .end-icon-div {
+  display: flex;
+  align-items: center;
+  & > * {
+    width: 16px;
+    height: 16px;
+  }
+  &:empty {
+    display: none;
+  }
 }
 </style>
