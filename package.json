@@ -6,13 +6,6 @@
   ],
   "main": "./dist/yo-ui-library.umd.js",
   "module": "./dist/yo-ui-library.mjs",
-  "exports": {
-    ".": {
-      "import": "./dist/yo-ui-library.mjs",
-      "require": "./dist/yo-ui-library.umd.js"
-    },
-    "./dist/style.css": "./dist/style.css"
-  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",

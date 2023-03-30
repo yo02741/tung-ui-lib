@@ -5,5 +5,9 @@
 }
 
 body, html {
-  font-family: 'Noto Sans TC', 'Noto Sans', sans-serif;
+  font-family: $font-family;
+  font-size: $font-size-base;
+  font-weight: $font-weight-normal;
+  line-height: $font-line-height;
+  color: $text-color;
 }
