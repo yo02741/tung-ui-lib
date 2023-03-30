@@ -1,0 +1,69 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs';
+
+import * as styles from '../assets/scss/_export.module.scss';
+
+<Meta title="Colors" />
+
+# Colors
+
+<br />
+<br />
+<br />
+
+
+<ColorPalette>
+  <ColorItem 
+    title="Primary" 
+    subtitle="主色" 
+    colors={{ 'primary': styles.primary }} 
+  />
+
+  <ColorItem
+    title=""
+    subtitle=""
+    colors={{
+      'green-100': styles['green100'],
+      'green-200': styles['green200'],
+      'green-300': styles['green300'],
+      'green-400': styles['green400'],
+      'green-500': styles['green500'],
+      'green-600': styles['green600'],
+      'green-700': styles['green700'],
+      'green-800': styles['green800'],
+      'green-900': styles['green900'],
+    }}
+  />
+
+  <ColorItem 
+    title="Secondary" 
+    subtitle="輔色" 
+    colors={{ 'secondary': styles.secondary }} 
+  />
+
+  <ColorItem
+    title=""
+    subtitle=""
+    colors={{
+      'gray-100': styles['gray100'],
+      'gray-200': styles['gray200'],
+      'gray-300': styles['gray300'],
+      'gray-400': styles['gray400'],
+      'gray-500': styles['gray500'],
+      'gray-600': styles['gray600'],
+      'gray-700': styles['gray700'],
+      'gray-800': styles['gray800'],
+      'gray-900': styles['gray900'],
+    }}
+  />
+
+  <ColorItem 
+    title="Message" 
+    subtitle="提示" 
+    colors={{ 
+      'success': styles.success,
+      'warning': styles.warning,
+      'error': styles.error,
+      'info': styles.info
+    }} 
+  />
+</ColorPalette>
